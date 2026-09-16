@@ -1,0 +1,18 @@
+
+.case-study-page { background: var(--paper); }
+.case-study-header { padding: 28px 0 0; }
+.case-study-nav { display: flex; justify-content: space-between; align-items: center; }
+.back-link { font: 12px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.back-link i { color: var(--purple); margin-right: 8px; }
+.case-hero { padding: 112px 0 95px; border-bottom: 1px solid var(--line); }
+.case-kicker { color: var(--purple); font: 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.case-hero h1 { max-width: 850px; font-size: clamp(48px, 8vw, 100px); line-height: .92; letter-spacing: -.08em; margin: 26px 0 29px; }
+.case-hero h1 em { font-family: var(--serif); font-weight: 600; }
+.case-summary { max-width: 620px; color: var(--muted); font-size: 18px; }
+.case-meta { display: flex; flex-wrap: wrap; gap: 12px 38px; margin-top: 48px; font: 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.case-meta span { color: var(--muted); }.case-meta strong { display: block; color: var(--ink); font: 14px var(--sans); text-transform: none; letter-spacing: 0; margin-top: 6px; }
+.case-banner { min-height: 360px; margin: 0 auto; display: grid; place-items: center; border-radius: 0 0 18px 18px; overflow: hidden; }
+.case-banner span { font: clamp(54px, 11vw, 150px) var(--serif); letter-spacing: -.1em; }
+.case-banner.indigo { background: #dcd1ff; color: #33205f; }.case-banner.sage { background: #d5e2d3; color: #477053; }.case-banner.orange { background: #f1d6b7; color: #8d512d; }.case-banner.red { background: #efc9c1; color: #7c302b; }.case-banner.lime { background: #e5edb8; color: #526b35; }.case-banner.blue { background: #cbdfea; color: #365c78; }
+.case-content { padding: 105px 0 140px; }.case-content h2 { font-size: 42px; letter-spacing: -.07em; line-height: 1; margin: 0 0 22px; }.case-content p { color: var(--muted); font-size: 16px; line-height: 1.7; }.case-block { border-top: 1px solid var(--line); padding-top: 25px; }.case-next { border-top: 1px solid var(--line); padding: 26px 0 0; display: flex; justify-content: space-between; font: 12px var(--mono); text-transform: uppercase; }.case-next i { color: var(--purple); margin-left: 8px; }
+@media (max-width: 767px) { .case-study-header { padding-top: 20px; }.case-hero { padding: 78px 0 65px; }.case-hero h1 { font-size: 56px; }.case-summary { font-size: 16px; }.case-banner { min-height: 250px; }.case-content { padding: 75px 0 90px; }.case-content h2 { font-size: 35px; }.case-meta { gap: 22px; } }
