@@ -647,7 +647,7 @@
 .goal-trusted { background: rgba(245, 130, 32, 0.08); border-color: rgba(245, 130, 32, 0.18); color: #b45d19; }
 
 .solution-example-copy {
-  margin: 0 0 18px;
+  margin: 20px 0 18px;
 }
 
 .solution-example-copy p {
@@ -660,16 +660,16 @@
 
 .solution-example-block {
   position: relative;
-  padding: 22px 22px 18px 24px;
+  padding: 18px 22px 18px 24px;
   background: rgba(120, 84, 246, 0.06);
   border-left: 4px solid var(--purple);
   border-radius: 0 12px 12px 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .example-label {
   display: inline-block;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   color: var(--purple);
   font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   line-height: 1.1;
@@ -685,6 +685,10 @@
 
 .example-label-line {
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
   color: var(--il-ink);
   font-size: 1.05rem;
   line-height: 1.5;
@@ -708,6 +712,10 @@
 
 .example-explanation {
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   color: var(--il-ink);
   font-size: clamp(1.05rem, 1.9vw, 1.35rem);
   line-height: 1.5;
@@ -718,9 +726,13 @@
   font-weight: 700;
 }
 
-.example-warning {
-  color: #c8741a;
-  font-weight: 700;
+.example-warning-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ed8e2d;
+  box-shadow: 0 0 0 3px rgba(237, 142, 45, 0.18);
 }
 
 .decision-row {
@@ -750,6 +762,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-width: 88px;
   min-height: 36px;
   padding: 8px 14px;
@@ -759,6 +772,17 @@
   font-weight: 700;
   letter-spacing: -.02em;
 }
+
+.decision-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.safe-dot { background: #31b36d; }
+.caution-dot { background: #ef9e2f; }
+.avoid-dot { background: #d63d4d; }
 
 .decision-safe { background: rgba(58, 193, 131, 0.15); color: #1d7c57; }
 .decision-caution { background: rgba(245, 164, 16, 0.16); color: #a76a00; }
