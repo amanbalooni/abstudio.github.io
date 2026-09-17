@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="icon" href="../images/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../images/favicon.svg">
-<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="./case-study.css">
-<link rel="stylesheet" href="./ingredilens-design.css">
+<link rel="stylesheet" href="../assets/css/case-study.css">
+<link rel="stylesheet" href="../assets/css/ingredilens-design.css">
 </head>
 <body class="case-study-page ingredlens-page" id="top">
 <header class="case-study-header"><nav class="container case-study-nav" aria-label="Case study navigation"><a class="brand" href="../index.html" aria-label="UI UX Playground home"><img src="../images/logo-x.png" title="UX Playground Logo" alt="UX Playground"></a><div class="case-nav-links"><a href="#overview">Overview</a><a href="#process">Process</a><a href="#design">Design</a><a class="back-link" href="../index.html#work"><i class="bi bi-arrow-left"></i> Back to work</a></div><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="case-nav-links" aria-label="Toggle navigation"><i class="bi bi-list"></i></button></nav><div class="case-nav-mobile" id="case-nav-links"><a href="#overview">Overview</a><a href="#process">Process</a><a href="#design">Design</a><a href="../index.html#work">Back to work</a></div></header>
@@ -61,8 +61,371 @@
       <blockquote>“Is this product safe for me?”</blockquote>
     </div>
   </section>
+
+  <section class="case-section container case-visible" id="challenge">
+    <div class="section-marker">02 / The Challenge</div>
+     <div class="il-overview-copy">
+      <p>Food packaging contains a large amount of nutritional and ingredient information, but understanding what that information means can be difficult. A product that appears healthy may contain ingredients that are unsuitable for someone with:</p>
+     </div>
+     <div class="condition-list" aria-label="Conditions and preferences">
+        <span class="condition-pill condition-pill--diabetes"><i class="bi bi-droplet-half" aria-hidden="true"></i>Diabetes</span>
+        <span class="condition-pill"><i class="bi bi-heart-pulse" aria-hidden="true"></i>High blood pressure</span>
+        <span class="condition-pill"><i class="bi bi-activity" aria-hidden="true"></i>Thyroid conditions</span>
+        <span class="condition-pill"><i class="bi bi-shield-exclamation" aria-hidden="true"></i>Food allergies</span>
+        <span class="condition-pill"><i class="bi bi-bar-chart-line" aria-hidden="true"></i>High cholesterol</span>
+        <span class="condition-pill"><i class="bi bi-leaf" aria-hidden="true"></i>Specific dietary preferences</span>
+      </div>
+      <div class="il-overview-copy">
+       <p><b>For example,</b> a peanut butter product may look like a healthy choice. However, a person managing diabetes may need to understand whether its sugar and carbohydrate content could significantly impact their blood sugar.</p>
+     </div>
+      <div class="challenge-bottom row align-items-end g-0">
+        <div class="col-lg-7 challenge-copy">
+          <p class="challenge-lead">
+            The challenge was to create a product-scanning experience that could:
+          </p>
+
+          <ul class="challenge-points">
+            <li>Simplify complex nutritional information</li>
+            <li>Personalize results for every user</li>
+            <li>Clearly communicate health risks</li>
+            <li>Avoid overwhelming users with medical terminology</li>
+            <li>Help users make better decisions immediately</li>
+            <li>Recommend healthier alternatives when necessary</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 challenge-visual-wrap">
+          <img
+            class="challenge-visual"
+            src="../images/mockups/challenge-food-illustration.png"
+            alt="Food products including milk, juice, chips, salad, water and other packaged foods"
+          >
+        </div>
+      </div>
+  </section>
+
+   <section class="case-section container case-visible" id="problem">
+       <div class="section-marker">03 / The Problem</div>
+       <div class="il-overview-copy">
+       <div class="problem-highlight">
+       <p class="mb-0"><b>Food labels provide information, but they don't provide personalized answers.</b></p>
+       </div>
+       <p>Users often need to manually read ingredients, understand nutritional tables, identify allergens, and determine
+        whether a product aligns with their health requirements.</p>
+       </div>
+       <div class="problem-tags" aria-label="Key difficulties">
+        <span>Time-consuming</span>
+        <span>Confusing</span>
+        <span>Difficult for non-experts</span>
+        <span>Prone to incorrect interpretation</span>
+      </div>
+      <div class="key-problem">
+        <p><b>The key UX problem became:</b></p>
+        <p>How might we help users understand whether a food product is suitable for their personal health profile within seconds of scanning it?</p>
+      </div>
+   </section>
+
+  <section class="case-section il-flow-section container case-visible" id="process">
+    <div class="il-flow-container">
+
+      <div class="il-flow-grid">
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-purple">
+            <span class="bi bi-person"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-purple-bg">01</span>
+              <h3>Profile</h3>
+            </div>
+
+            <p class="il-card-description">
+              Create your account<br>
+              and set up your profile.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-purple">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-profile-screen">
+                  <div class="il-welcome">Welcome!</div>
+                  <div class="il-small">Let's personalize your<br>experience</div>
+                  <div class="il-user-circle"><span class="bi bi-person"></span></div>
+                  <div class="il-line short"></div>
+                  <div class="il-line"></div>
+                  <div class="il-screen-button">Get Started</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Sign up / Login</li>
+              <li>Basic personal details</li>
+              <li>App preferences</li>
+            </ul>
+          </div>
+
+          <div class="il-flow-arrow il-arrow-purple">→</div>
+        </article>
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-green">
+            <span class="bi bi-clipboard2-plus"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-green-bg">02</span>
+              <h3>Add Health<br>Information</h3>
+            </div>
+
+            <p class="il-card-description">
+              Add your health conditions,<br>
+              allergies and dietary<br>
+              preferences.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-green">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-health-screen">
+                  <div class="il-screen-heading">Health Information</div>
+                  <div class="il-field-label">Medical Conditions</div>
+                  <div class="il-chip-row"><span>Diabetes</span></div>
+                  <div class="il-chip-row"><span>Hypertension</span></div>
+                  <div class="il-field-label">Allergies</div>
+                  <div class="il-chip-row"><span>Peanuts</span></div>
+                  <div class="il-field-label">Dietary Preferences</div>
+                  <div class="il-chip-row"><span>Vegetarian</span><span>Low Sugar</span></div>
+                  <div class="il-screen-button">Save</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Medical conditions</li>
+              <li>Allergies</li>
+              <li>Dietary preferences</li>
+            </ul>
+          </div>
+
+          <div class="il-flow-arrow il-arrow-green">→</div>
+        </article>
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-blue">
+            <span class="bi bi-upc-scan"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-blue-bg">03</span>
+              <h3>Scan Product</h3>
+            </div>
+
+            <p class="il-card-description">
+              Scan any food or beverage<br>
+              product barcode.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-dark">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-scan-screen">
+                  <div class="il-scan-title">Scan Product</div>
+                  <div class="il-scan-frame">
+                    <div class="il-scan-corner top-left"></div>
+                    <div class="il-scan-corner top-right"></div>
+                    <div class="il-scan-corner bottom-left"></div>
+                    <div class="il-scan-corner bottom-right"></div>
+                    <div class="il-peanut-pack">PEANUT<br><strong>BUTTER</strong></div>
+                  </div>
+                  <div class="il-scan-hint">Align barcode<br>within the frame</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Barcode or QR scan</li>
+              <li>Product identification</li>
+              <li>Instant product details</li>
+            </ul>
+          </div>
+
+          <div class="il-flow-arrow il-arrow-blue">→</div>
+        </article>
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-orange">
+            <span class="bi bi-search"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-orange-bg">04</span>
+              <h3>Analyze<br>Ingredients</h3>
+            </div>
+
+            <p class="il-card-description">
+              We analyze the ingredients<br>
+              and nutritional information<br>
+              using AI.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-orange">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-analyze-screen">
+                  <div class="il-analyzing">Analyzing...</div>
+                  <div class="il-ai-circle">AI</div>
+                  <div class="il-check-line"><span>●</span> Reading ingredients</div>
+                  <div class="il-check-line"><span>●</span> Nutritional information</div>
+                  <div class="il-check-line"><span>●</span> Health impact</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Ingredient recognition</li>
+              <li>Nutrition analysis</li>
+              <li>Health impact evaluation</li>
+            </ul>
+          </div>
+
+          <div class="il-flow-arrow il-arrow-orange">→</div>
+        </article>
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-red">
+            <span class="bi bi-heart-pulse-fill"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-red-bg">05</span>
+              <h3>Get Personalized<br>Result</h3>
+            </div>
+
+            <p class="il-card-description">
+              Receive personalized insights<br>
+              based on your health profile.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-red">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-result-screen">
+                  <div class="il-result-title">Your Result</div>
+                  <div class="il-warning-title"><span>!</span> High Sugar Content</div>
+                  <p>This product may not be<br>suitable for you.</p>
+                  <div class="il-result-divider"></div>
+                  <div class="il-result-copy">Contains high sugar per<br>serving which can increase<br>your blood sugar level.</div>
+                  <div class="il-result-divider"></div>
+                  <div class="il-result-copy"><strong>Better Alternatives</strong><br>Low Sugar Peanut Butter →</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Personalized health insights</li>
+              <li>Risk warnings</li>
+              <li>Better alternatives</li>
+            </ul>
+          </div>
+
+          <div class="il-flow-arrow il-arrow-red">→</div>
+        </article>
+
+        <article class="il-flow-card">
+          <div class="il-flow-icon il-green">
+            <span class="bi bi-shield-check"></span>
+          </div>
+
+          <div class="il-flow-card-body">
+            <div class="il-step-title">
+              <span class="il-step-number il-green-bg">06</span>
+              <h3>Make a Better<br>Choice</h3>
+            </div>
+
+            <p class="il-card-description">
+              Choose products that are<br>
+              better for your health.
+            </p>
+
+            <div class="il-phone-wrap">
+              <div class="il-phone il-phone-green">
+                <div class="il-phone-notch"></div>
+                <div class="il-phone-top">‹ <span>⋯</span></div>
+                <div class="il-phone-content il-choice-screen">
+                  <div class="il-choice-title">Better Choice</div>
+                  <div class="il-choice-check"><span class="bi bi-check-lg"></span></div>
+                  <div class="il-good">Good Choice!</div>
+                  <p>This product aligns with<br>your health goals.</p>
+                  <div class="il-screen-button">Add to Favorites</div>
+                  <div class="il-screen-button outline">Scan Another Product</div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="il-card-list">
+              <li>Informed decision</li>
+              <li>Save / Share results</li>
+              <li>Track your choices</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="il-engine-connector" aria-hidden="true">
+        <span class="il-dash dash-1"></span>
+        <span class="il-dash dash-2"></span>
+        <span class="il-dash dash-3"></span>
+        <span class="il-dash dash-4"></span>
+        <span class="il-dash dash-5"></span>
+        <span class="il-dash dash-6"></span>
+      </div>
+
+      <div class="il-engine">
+        <div class="il-engine-icon">
+          <span class="bi bi-cpu"></span>
+        </div>
+        <div class="il-engine-copy">
+          <strong>AI &amp; Health Analysis Engine</strong>
+          <span>Ingredients Database&nbsp; · &nbsp;Nutrition Database&nbsp; · &nbsp;Health Rules Engine</span>
+          <span>AI Model&nbsp; · &nbsp;Risk Assessment</span>
+        </div>
+      </div>
+
+      <div class="il-goal">
+        <div class="il-goal-icon">
+          <span class="bi bi-bullseye"></span>
+        </div>
+
+        <div class="il-goal-copy">
+          <strong>Our Goal</strong>
+          <span>Empower users to understand what they consume and make healthier choices every day.</span>
+        </div>
+
+        <div class="il-goal-pills">
+          <span class="personalized"><i class="bi bi-person"></i> Personalized</span>
+          <span class="ai-powered"><i class="bi bi-stars"></i> AI-Powered</span>
+          <span class="health-focused"><i class="bi bi-heart"></i> Health-Focused</span>
+          <span class="trusted"><i class="bi bi-shield-check"></i> Trusted</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
 <footer class="case-footer"><div class="container"><div><a class="brand footer-brand" href="../index.html"><span>UI/UX</span><small>PLAYGROUND</small></a><p>© 2026 UI/UX Playground</p></div><div class="footer-links"><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></div><a class="back-top" href="#top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a></div></footer>
-<script src="./case-study.js"></script>
+<script src="../assets/js/case-study.js"></script>
 </body>
 </html>
