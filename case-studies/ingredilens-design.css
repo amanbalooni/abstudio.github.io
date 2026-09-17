@@ -9,14 +9,12 @@
   color: var(--il-ink);
 }
 
-.ingredlens-page .il-hero {
+/* .ingredlens-page .il-hero {
   background: #fff;
   padding: 0 24px;
-}
+} */
 
 .ingredlens-page .il-wrap {
-  width: min(100%, 1000px);
-  margin: 0 auto;
   padding: 18px 0 0;
 }
 
@@ -66,7 +64,6 @@
 
 .ingredlens-page .il-subtitle {
   margin: 12px 0 27px;
-  max-width: 960px;
   color: var(--il-ink);
   font-family: var(--sans);
   font-size: 20px;
@@ -150,10 +147,10 @@
 }
 .ingredlens-page .il-hero-visual img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: block;
-  object-fit: cover;
-  object-position: center center;
+  /* object-fit: cover;
+  object-position: center center; */
 }
 
 /* The reference continues with a white Overview block immediately after the hero. */
@@ -164,9 +161,7 @@
 .ingredlens-page .il-content .section-marker {
   margin-bottom: 25px;
 }
-.ingredlens-page .il-overview-copy {
-  max-width: 930px;
-}
+
 .ingredlens-page .il-overview-copy p {
   margin: 0 0 24px;
   color: var(--il-ink);
