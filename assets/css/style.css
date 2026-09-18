@@ -24,8 +24,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--purple); outlin
 .brand span { font-size: 17px; }.brand small { font: 8px var(--mono); letter-spacing: .12em; margin-top: 5px; }
 .nav-links { display: flex; align-items: center; gap: 31px; font-size: 15px; color: #68686a; }.nav-links a { position: relative; }.nav-links a:not(.nav-contact)::after { content: ''; position: absolute; height: 1px; left: 0; right: 100%; bottom: -7px; background: var(--ink); transition: right .25s ease; }.nav-links a:hover::after, .nav-links .active::after { right: 0; }.nav-contact { color: #fff; background: var(--ink); border-radius: 30px; padding: 11px 17px; }.nav-contact i { margin-left: 6px; }.nav-toggle { display: none; border: 0; background: none; font-size: 25px; }
 .section { padding-top: 128px; }
-.hero { padding-top: 80px; padding-bottom: 30px; }
-.hero-layout { display: grid; grid-template-columns: 1.65fr .95fr; align-items: end; column-gap: 10px; min-height: 620px; }
+.hero { padding-top: 80px; padding-bottom: 100px; }
+.hero-layout { display: grid; grid-template-columns: 1.65fr .95fr; align-items: end; column-gap: 10px;}
 .eyebrow, .section-label, .card-kicker, .art-top, .article-body small, .hero-foot { color: var(--muted); font: 12px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 9px; }
 .eyebrow-dot { height: 7px; width: 7px; background: var(--green); border-radius: 50%; display: inline-block; }
@@ -37,7 +37,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--purple); outlin
 .hero-foot { display: flex; align-items: center; gap: 12px; }
 .hero-foot i { color: var(--purple); font-size: 17px; }
 .hero-note { margin-left: auto; color: #a0a0a0; }
-.hero-art-wrap { display: flex; justify-content: center; align-items: flex-end; min-height: 500px; }
+.hero-metrics { display: grid; grid-template-columns: 1fr 1fr 1.2fr 1fr; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 50px; }
+.hero-metric { position: relative; min-height: 156px; display: flex; align-items: center; justify-content: center; gap: 18px; padding: 18px 18px; }
+.hero-metric + .hero-metric::before { content: ''; position: absolute; left: 0; top: 18%; bottom: 18%; width: 1px; background: var(--line); }
+.metric-value { font-size: clamp(40px, 3.15vw, 76px); line-height: .8; letter-spacing: -.085em; font-weight: 500; }
+.metric-copy { display: flex; flex-direction: column; font: 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: rgba(23,23,23,.7); line-height: 1.3; }
+.hero-metric-icon { justify-content: flex-start; padding-left: 32px; }
+.metric-ring { position: relative; width: 64px; height: 42px; display: inline-block; margin-right: 8px; }
+.metric-ring span { position: absolute; width: 38px; height: 38px; border: 2px solid rgba(23,23,23,.9); border-radius: 50%; top: 2px; left: 0; }
+.metric-ring span + span { left: 22px; }
+.hero-metric-text .metric-copy { text-align: left; }
+.hero-art-wrap { display: flex; justify-content: center; align-items: flex-start; min-height: 500px; }
 .hero-art { position: relative; width: 100%; max-width: 600px; height: 460px; overflow: visible; }
 .art-divider { position: absolute; left: 48%; top: 0; bottom: 0; width: 1px; background: rgba(23,23,23,.14); }
 .art-circle { position: absolute; left: 24px; top: 24px; width: 310px; height: 310px; border-radius: 50%; background: #efefee; box-shadow: inset 0 0 0 1px rgba(0,0,0,.02); background-image: radial-gradient(rgba(0,0,0,.06) 1px, transparent 0); background-size: 8px 8px; }
