@@ -7,25 +7,48 @@
     --case-purple: #7854f6;
     --case-border: #dcdedb;
     --case-soft: #f7f8f6;
-    --case-display: clamp(2.5rem, 4vw, 4.5rem);
-    --case-h1: clamp(2.4rem, 4vw, 4rem);
-    --case-h2: clamp(1.8rem, 2.8vw, 2.7rem);
-    --case-h3: clamp(1.3rem, 2vw, 1.75rem);
-    --case-h4: 1.25rem;
-    --case-body-lg: 1.125rem;
-    --case-body: 1rem;
-    --case-body-sm: .9375rem;
-    --case-caption: .8125rem;
-    --case-label: .75rem;
-    --case-line-heading: 1.1;
-    --case-line-body: 1.7;
+    --font-primary: 'DM Sans', Arial, sans-serif;
+    --font-secondary: 'Playfair Display', Georgia, serif;
+    --font-mono: 'DM Mono', monospace;
+    --type-display: clamp(2.75rem, 4vw, 4.5rem);
+    --type-h1: clamp(2.3rem, 4vw, 3.5rem);
+    --type-h2: clamp(1.9rem, 3vw, 2.75rem);
+    --type-h3: clamp(1.45rem, 2vw, 1.9rem);
+    --type-h4: 1.35rem;
+    --type-lead: 1.2rem;
+    --type-body: 1rem;
+    --type-body-sm: .9375rem;
+    --type-caption: .8125rem;
+    --type-label: .75rem;
+    --type-small: .875rem;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --lh-heading: 1.1;
+    --lh-body: 1.7;
+    --lh-small: 1.4;
+    --ls-heading: -0.04em;
+    --ls-tight: -0.07em;
+    --case-display: var(--type-display);
+    --case-h1: calc(var(--type-h1) - 10px);
+    --case-h2: calc(var(--type-h2) - 10px);
+    --case-h3: var(--type-h3);
+    --case-h4: var(--type-h4);
+    --case-body-lg: var(--type-lead);
+    --case-body: var(--type-body);
+    --case-body-sm: var(--type-body-sm);
+    --case-caption: var(--type-caption);
+    --case-label: var(--type-label);
+    --case-line-heading: var(--lh-heading);
+    --case-line-body: var(--lh-body);
     --case-line-relaxed: 1.8
 }
 
 .case-study-page {
     background: #fff;
     color: var(--ink);
-    font-family: var(--sans);
+    font-family: var(--font-primary);
     font-size: var(--case-body);
     line-height: var(--case-line-body);
     -webkit-font-smoothing: antialiased;
@@ -40,39 +63,39 @@
 .case-study-page h6 {
     color: var(--ink);
     margin: 0 0 1rem;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     line-height: var(--case-line-heading);
-    letter-spacing: -.04em;
-    max-width: 18ch
+    letter-spacing: var(--ls-heading);
+    /* max-width: 18ch */
 }
 
 .case-study-page h1 {
     font-size: var(--case-h1);
-    letter-spacing: -.06em;
+    letter-spacing: -0.06em;
     margin-bottom: 1.6rem;
-    max-width: 14ch
+    /* max-width: 14ch */
 }
 
 .case-study-page h2 {
     font-size: var(--case-h2);
     margin-bottom: 1.2rem;
-    max-width: 16ch
+    /* max-width: 16ch */
 }
 
 .case-study-page h3 {
     font-size: var(--case-h3);
-    font-weight: 600;
+    font-weight: var(--fw-semibold);
     margin-bottom: .9rem;
-    max-width: 22ch
+    /* max-width: 22ch */
 }
 
 .case-study-page h4 {
     font-size: var(--case-h4);
-    font-weight: 600;
-    line-height: 1.25
+    font-weight: var(--fw-semibold);
+   s
 }
 
-.case-study-page p,
+/* .case-study-page p,
 .case-study-page li,
 .case-study-page td,
 .case-study-page th,
@@ -85,7 +108,7 @@
 .case-study-page .outcome-list div,
 .case-study-page .journey span {
     max-width: 70ch
-}
+} */
 
 .case-study-page p,
 .case-study-page li,
