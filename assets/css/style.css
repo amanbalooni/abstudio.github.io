@@ -176,7 +176,7 @@ small {
 .nav-links { display: flex; align-items: center; gap: 31px; font-size: 15px; color: #68686a; }.nav-links a { position: relative; }.nav-links a:not(.nav-contact)::after { content: ''; position: absolute; height: 1px; left: 0; right: 100%; bottom: -7px; background: var(--ink); transition: right .25s ease; }.nav-links a:hover::after, .nav-links .active::after { right: 0; }.nav-contact { color: #fff; background: var(--ink); border-radius: 30px; padding: 11px 17px; }.nav-contact i { margin-left: 6px; }.nav-toggle { display: none; border: 0; background: none; font-size: 25px; }
 .section { padding-top: 128px; }
 .hero { padding-top: 80px; padding-bottom: 100px; }
-.hero-layout { display: grid; grid-template-columns: 1.65fr .95fr; align-items: end; column-gap: 10px;}
+.hero-layout { display: grid; grid-template-columns: 1.65fr .95fr; column-gap: 10px;}
 .eyebrow, .section-label, .card-kicker, .art-top, .article-body small, .hero-foot { color: var(--muted); font: 12px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 9px; }
 .eyebrow-dot { height: 7px; width: 7px; background: var(--green); border-radius: 50%; display: inline-block; }
