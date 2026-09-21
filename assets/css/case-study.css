@@ -1700,7 +1700,7 @@
     background: var(--case-purple)
 }
 
-+@media (max-width: 767px) {
+@media (max-width: 767px) {
     .case-study-header {
         padding: 17px 0
     }
@@ -1714,6 +1714,7 @@
     }
 
     .case-nav-mobile {
+        display: none;
         padding: 18px 20px 3px;
         flex-direction: column;
         gap: 16px;
